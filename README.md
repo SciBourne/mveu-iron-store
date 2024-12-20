@@ -32,13 +32,17 @@ mongosh -f "data/db-bootstrap.js"
 Старт сервера:
 
 ```bash
-cd server && yarn dev
+cd server
+yarn install
+yarn dev
 ```
 
 Старт клиента:
 
 ```bash
-cd client && yarn dev
+cd client
+yarn install
+yarn dev
 ```
 
 <br>
