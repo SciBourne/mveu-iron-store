@@ -1,0 +1,15 @@
+.recomended-list {
+  h2 {
+    width: 100%;
+    text-align: start
+  }
+}
+
+
+.recomended-list-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  width: 100%;
+  gap: 0.5vw;
+}

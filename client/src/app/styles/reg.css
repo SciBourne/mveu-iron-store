@@ -1,0 +1,62 @@
+.user-reg-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--bg-color-middle);
+  border-radius: 0.4vw;
+
+  box-shadow: var(--shadow-dark);
+
+  margin-top: 4vw;
+  padding: 2vw;
+  gap: 2vw;
+  width: 50%;
+
+  > .button {
+    margin: 2vw;
+  }
+}
+
+
+.user-reg-form > .user-data {
+  display: flex;
+  flex-direction: column;
+
+  width: 40vw;
+  gap: 4vw;
+
+  > h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  > .user-names, .user-auth {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    gap: 2vw;
+  }
+}
+
+
+.user-reg-form > .delivery-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  width: 40vw;
+  gap: 2vw;
+
+  > h2 {
+    padding-bottom: 0;
+    margin-bottom: 2vw;
+  }
+
+  > .input-apartment {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+}

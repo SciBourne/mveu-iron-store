@@ -1,0 +1,227 @@
+.button-store {
+  background: var(--button-color-store);
+  color: var(--font-color-bright);
+
+  border: none;
+  border-radius: 0.4vw;
+
+  padding: 1vw 2vw;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 1;
+
+  transition: all 0.5s;
+
+  &::before {
+    content: "";
+    background: var(--button-color-store--hover);
+
+    border: inherit;
+    border-radius: inherit;
+
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.5s;
+  }
+
+  &::after {
+    content: "";
+    background: var(--button-color-store--active);
+
+    border: inherit;
+    border-radius: inherit;
+
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.5s;
+  }
+
+  &:hover::before,
+  &:active::after {
+    opacity: 1;
+  }
+
+  &:disabled {
+    background: var(--button-color-store--disabled);
+    color: var(--font-color-bright);
+
+    cursor: default;
+
+    &::after, &::before, &:hover::before {
+      background: inherit;
+      color: inherit;
+      cursor: inherit;
+    }
+  }
+}
+
+
+.button-back {
+  background: transparent;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: start;
+
+  border-radius: 0.4vw;
+  padding: 0.6vw 2vw;
+  gap: 0.4vw;
+
+  width: fit-content;
+  margin: 1vw 0;
+
+  cursor: pointer;
+  transition: all 0.5s;
+
+  > img {
+    width: var(--font-size-s);
+    height: auto;
+  }
+
+  &:hover {
+    background: var(--font-color-active);
+    box-shadow: var(--shadow-dark);
+  }
+}
+
+
+.button {
+  background: var(--button-color);
+  color: var(--font-color-bright);
+
+  border: none;
+  border-radius: 0.4vw;
+
+  padding: 1vw 2vw;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 1;
+
+  transition: all 0.5s;
+
+  &::before {
+    content: "";
+    background: var(--button-color--hover);
+
+    border: inherit;
+    border-radius: inherit;
+
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.5s;
+  }
+
+  &::after {
+    content: "";
+    background: var(--button-color--active);
+
+    border: inherit;
+    border-radius: inherit;
+
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.5s;
+  }
+
+  &:hover::before,
+  &:active::after {
+    opacity: 1;
+  }
+}
+
+
+.button-dangerous {
+  background: var(--button-color-dangerous);
+  color: var(--font-color-bright);
+
+  border: none;
+  border-radius: 0.4vw;
+
+  padding: 1vw 2vw;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 1;
+
+  transition: all 0.5s;
+
+  &::before {
+    content: "";
+    background: var(--button-color-dangerous--hover);
+
+    border: inherit;
+    border-radius: inherit;
+
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.5s;
+  }
+
+  &::after {
+    content: "";
+    background: var(--button-color-dangerous--active);
+
+    border: inherit;
+    border-radius: inherit;
+
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.5s;
+  }
+
+  &:hover::before,
+  &:active::after {
+    opacity: 1;
+  }
+}
+
+
+.button-logout {
+  align-self: flex-start;
+  margin: 2vw 0;
+}

@@ -1,0 +1,45 @@
+body {
+  background-color: var(--bg-color-main);
+  font-family: Montserrat;
+  font-size: var(--font-size-s);
+  font-weight: 300;
+
+  display: grid;
+
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-height: 100%;
+}
+
+
+h1 {
+  font-size: var(--font-size-l);
+}
+
+
+h2 {
+  font-size: var(--font-size-m);
+  font-weight: 500;
+}
+
+
+h3 {
+  font-size: var(--font-size-sx);
+  font-weight: 400;
+}
+
+
+button {
+  font-family: inherit;
+  border: 0;
+}
+
+
+.content {
+  display: flex;
+
+  width: calc(100% - 8vw);
+  margin: 0 auto;
+}

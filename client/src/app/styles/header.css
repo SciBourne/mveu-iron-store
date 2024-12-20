@@ -1,0 +1,72 @@
+header {
+  background: var(--bg-color-dark);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 6vw;
+}
+
+
+header > .content {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .phone > a {
+    color: var(--font-color-bright);
+    text-decoration: none;
+    padding: 1vw;
+    border-radius: 0.6vw;
+
+    transition: all 0.5s;
+
+    &:hover {
+      box-shadow: var(--shadow-bright);
+    }
+  }
+}
+
+
+.top-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.top-menu a {
+  border-radius: 25%;
+  padding: 0.6vw;
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: var(--shadow-bright);
+  }
+}
+
+
+.top-menu .cart-info-number {
+  color: var(--font-color-cart-info);
+}
+
+
+.top-menu .cart-info-text {
+  color: var(--font-color-bright);
+  padding: 0 0.3vw;
+}
+
+
+.logo-s {
+  width: 212px;
+  height: 40px;
+}
+
+
+.logo-m {
+  width: 500px;
+  height: 94px;
+}

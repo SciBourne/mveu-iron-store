@@ -1,0 +1,181 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.profile-page > .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  margin-top: 2vw;
+
+  span {
+    color: var(--font-color-medium);
+  }
+}
+
+
+.profile-page > .button {
+  margin: 2vw 0 6vw 0;
+}
+
+
+.profile-page .order-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid var(--border-color);
+  border-radius: 0.4vw;
+
+  margin: 4vw 0;
+  width: 100%;
+
+  > .order-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 2vw;
+    width: 100%;
+
+    > .item {
+      display: flex;
+      flex-direction: column;
+
+      > .header {
+        color: var(--font-color-medium);
+      }
+
+      > .data {
+        font-size: var(--font-size-sx);
+        font-weight: 400;
+      }
+    }
+  }
+
+  > .product {
+    border-radius: 0;
+
+    .item-qty {
+      color: var(--font-color-medium);
+
+      > .data {
+        color: var(--font-color-active);
+        padding-left: 0.5vw;
+      }
+    }
+  }
+
+  > .order-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    margin-left: 2vw;
+    padding: 2vw;
+    width: 100%;
+
+    > .header {
+      color: var(--font-color-medium);
+    }
+  }
+
+  > .order-status {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: 2vw;
+    width: 100%;
+
+    > .status {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5vw;
+
+      color: var(--font-color-medium);
+
+      > .data {
+        color: var(--font-color-active);
+      }
+    }
+
+    > .cancel-button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      background: transparent;
+      gap: 0.5vw;
+
+      &:hover {
+        color: var(--font-color-dangerous);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+.user-edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--bg-color-middle);
+  border-radius: 0.4vw;
+
+  box-shadow: var(--shadow-dark);
+
+  margin: 4vw 0 2vw 0;
+  padding: 2vw 2vw 4vw 2vw;
+  gap: 2vw;
+  width: 50%;
+}
+
+
+.user-edit-form > .user-data {
+  display: flex;
+  flex-direction: column;
+
+  width: 40vw;
+  gap: 4vw;
+
+  > .user-names, .user-contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    gap: 2vw;
+  }
+}
+
+
+.user-edit-form > .delivery-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  width: 40vw;
+  gap: 2vw;
+
+  > .input-apartment {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+}
+
+
+.button-form-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 2vw 0 10vw 0;
+  gap: 1vw;
+}

@@ -1,0 +1,46 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+
+  font-weight: 400;
+  width: 100%;
+}
+
+
+.input-field > input {
+  font-size: var(--font-size-s);
+
+  border: 1px solid var(--border-color-dark);
+  border-radius: 0.5vw;
+
+  box-sizing: border-box;
+  padding: 1.4vw 1vw;
+
+  width: 100%;
+  height: var(--font-size-l);
+}
+
+
+.input-checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4vw;
+}
+
+
+.input-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+
+  > textarea {
+    font-size: var(--font-size-s);
+
+    border: 1px solid var(--border-color-dark);
+    border-radius: 0.5vw;
+
+    box-sizing: border-box;
+    padding: 1vw;
+  }
+}

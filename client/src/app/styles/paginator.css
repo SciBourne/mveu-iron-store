@@ -1,0 +1,26 @@
+.paginator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5vw;
+  padding: 2vw;
+}
+
+.paginator > button {
+  background: var(--bg-color-dark);
+  color: var(--font-color-bright);
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+
+  width: 2vw;
+  height: 2vw;
+  padding: 0.5vw;
+
+  &:disabled {
+    background: var(--bg-color-middle);
+    cursor: default;
+  }
+}

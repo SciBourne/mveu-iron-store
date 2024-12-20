@@ -1,0 +1,40 @@
+.category {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+
+  justify-content: space-between;
+  width: 100%;
+  gap: 2vw;
+}
+
+
+.category-col {
+  flex-direction: column;
+  gap: 0;
+}
+
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+
+.category-name {
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  gap: 1vw;
+}

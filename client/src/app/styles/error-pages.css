@@ -1,0 +1,28 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 6vw;
+
+  width: 100%;
+  height: 33vh;
+}
+
+
+.product-not-found, .empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 40vh;
+
+  > h2, p {
+    text-align: center;
+    width: 60%;
+  }
+}

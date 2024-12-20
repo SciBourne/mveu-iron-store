@@ -1,0 +1,47 @@
+:root {
+
+  /* Color */
+
+  --font-color-bright: #FFFFFF;
+  --font-color-medium: #b4b4b4;
+  --font-color-dark: #000000;
+  --font-color-active: #83CAF6;
+  --font-color-disabled: #a1d32c;
+  --font-color-cart-info: #FF7222;
+  --font-color-dangerous: #ff0000;
+
+  --bg-color-main: #FFFFFF;
+  --bg-color-dark: linear-gradient(0deg, #343434 0%, #505050 100%);
+  --bg-color-soft-dark: linear-gradient(0deg, #616161 0%, #bdbdbd 100%);
+  --bg-color-middle: linear-gradient(180deg, #D9D9D9 0%, #F9F9F9 100%);
+
+  --button-color-store: linear-gradient(180deg, #FFA132 0%, #99601E 100%);
+  --button-color-store--hover: linear-gradient(180deg, #FF7222 0%, #99591E 100%);
+  --button-color-store--active: linear-gradient(180deg, #DA6320 0%, #844C18 100%);
+  --button-color-store--disabled: linear-gradient(180deg, #dff0ba 0%, #a1d32c 100%);
+  --button-color-store--only-content: orange;
+
+  --button-color: linear-gradient(180deg, #4A74DF 0%, #283F79 100%);
+  --button-color--hover: linear-gradient(180deg, #5e86ee 0%, #1f4096 100%);
+  --button-color--active: linear-gradient(180deg, #2e4fa1 0%, #182952 100%);
+
+  --button-color-dangerous: linear-gradient(180deg, #df4a4a 0%, #792828 100%);
+  --button-color-dangerous--hover: linear-gradient(180deg, #ee5e5e 0%, #961f1f 100%);
+  --button-color-dangerous--active: linear-gradient(180deg, #a12e2e 0%, #521818 100%);
+
+  --border-color: #e7e7e7;
+  --border-color-dark: #b4b4b4;
+
+  /* Shadows */
+
+  --shadow-bright: 0 0 8px rgba(255, 255, 255, 0.25);
+  --shadow-dark: 4px 4px 8px rgba(0, 0, 0, 0.25);
+
+  /* Font size */
+
+  --font-size-s: 1vw;
+  --font-size-sx: 1.25vw;
+  --font-size-m: 1.5vw;
+  --font-size-l: 2vw;
+
+}
